@@ -71,8 +71,8 @@ General
 */
 
 .background{
-    background: #E2E2E5;
-    height: 3000px;
+    background: white;
+    height: 1200px;
 }
 
 .title{
@@ -80,24 +80,28 @@ General
     font-weight: bold;
     font-size: 150px;
     color: black;
+}
+
+.canvas{
+    width: 98%;
     display: flex;
-    justify-content: center;
-    align-content: center;
+    background: lightgreen;
+    justify-content: space-between;   
+    align-items: center;
 }
 
 .container{
-    width: 100%;
+    width: 300px;
     height: 500px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-
+    flex-direction: column;
+    justify-content: center;
+    background: pink;
 }
 
 .box{
     width: 250px;
     height: 100px;
-    display: inline-flex;
     background: black;
 }
 
@@ -113,8 +117,19 @@ General
     display: inline;
 }
 
+.containerTwo{
+    width: 1500px;
+    height: 800px;
+    display: inline-flex;
+    background: lightblue;
+    border: 7px solid black;
+    box-shadow: 1px 1px 1px black;
+}
 
-
+a{
+    text-decoration: none;
+    color: white;
+}
 
 
 
