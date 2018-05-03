@@ -120,11 +120,20 @@ General
 
 a{
     text-decoration: none;
+    color: black;
+
+}
+
+.black{
+    color: black;
+}
+
+.white{
     color: white;
 }
 
 .body-font{
-    font-size: 25px;
+    font-size: 2vw;
     font-family: Roboto;
 }
 
@@ -135,11 +144,21 @@ a{
     margin-bottom: 2vh;
 }
 
-.image{
+.photo{
     margin-top: 10px;
     margin-left: 10px;
-    height: 50vh;
-    width: 30vw;
+    height: 30vh;
+    width: 20vw;
+}
+
+.image-contact{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 60vh;
+    width: 60vw;
+    float: right;
+    width: 45%; 
+    float: right; 
 }
 
 .border-space{
@@ -147,19 +166,36 @@ a{
     margin-left: 10px;
 }
 
+body{
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+.height{
+    line-height: 110px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .flex-start{
     display: flex;
     justify-content: flex-start;
 }
 
-.font-change{
-    font-size: 2vw;
-}
-
-body{
-    margin-left: 12px;
-    margin-right: 12px;
-    margin-bottom: 12px;
+.image-size{
+    width: 8vw
 }
 
 
