@@ -133,8 +133,8 @@ a{
 }
 
 .body-font{
-    font-size: 2vw;
-    font-family: Roboto;
+    font-size: 32px;
+    font-family: Karla, Arial;
 }
 
 .line{
@@ -147,8 +147,10 @@ a{
 .photo{
     margin-top: 10px;
     margin-left: 10px;
-    height: 30vh;
+    margin-right: 10px;
+    height: 300px;
     width: 20vw;
+    float: left;
 }
 
 .image-contact{
@@ -189,14 +191,28 @@ body{
     align-items: center;
 }
 
-.flex-start{
+.flex-space{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+
 
 .image-size{
     width: 8vw
 }
+
+.resume{
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 2vw;
+    color: purple;
+}
+
+
+
+
+
 
 
 
