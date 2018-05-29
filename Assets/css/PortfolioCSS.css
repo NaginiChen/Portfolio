@@ -163,9 +163,9 @@ a{
 }
 
 .border-space{
-    margin-top: 1.2vw;
-    margin-left: 1.2vw;
-    margin-right: 1.2vw;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 body{
