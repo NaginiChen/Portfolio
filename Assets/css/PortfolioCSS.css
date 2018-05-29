@@ -208,7 +208,7 @@ body{
 
 .resume{
     width: 15vw;
-    height: 2vw;
+    height: auto;
     font-family: Arial;
     font-weight: bold;
     font-size: 1.3vw;
