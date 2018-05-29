@@ -145,8 +145,7 @@ a{
 }
 
 .photo{
-    margin-top: 10px;
-    margin-left: 10px;
+
     margin-right: 10px;
     height: 40vh;
     width: 20vw;
@@ -164,8 +163,9 @@ a{
 }
 
 .border-space{
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 1.2vw;
+    margin-left: 1.2vw;
+    margin-right: 1.2vw;
 }
 
 body{
