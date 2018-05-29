@@ -197,19 +197,24 @@ body{
     flex-wrap: wrap;
 }
 
+.flex-align{
+    display: flex;
+    align-items: center;
+}
 
 .image-size{
     width: 8vw
 }
 
 .resume{
-    width: 100px;
-    height: 100px;
+    width: 15vw;
+    height: 2vw;
     font-family: Arial;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 1.3vw;
     color: white;
-    background-color: #FF1C1C;
+    background-color: black;
+    text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
