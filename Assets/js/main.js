@@ -1,42 +1,47 @@
-filterSelection("all")
-function filterSelection(c) {
-    var x, i;
-    x = document.getElementsByClassName("filterDiv");
-    if (c == "all") c = "";
-    for (i = 0; i < x.length; i++) {
-        w3RemoveClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-    }
-}
-
-function w3AddClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-    }
-}
-
-function w3RemoveClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-        while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);     
-        }
-    }
-    element.className = arr1.join(" ");
-}
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function(){
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
+// Source: http://www.dwuser.com/education/content/creating-a-jquery-image-scroller/
+$(function(){
+    var scroller = $('#scroller div.innerScrollArea');
+    var scrollerContent = scroller.children('ul');
+    scrollerContent.children().clone().appendTo(scrollerContent);
+    var curX = 0;
+    scrollerContent.children().each(function(){
+        var $this = $(this);
+        $this.css('left', curX);
+        curX += $this.outerWidth(true);
     });
-}
+    var fullW = curX / 2;
+    var viewportW = scroller.width();
+
+    // Scrolling speed management
+    var controller = {curSpeed:0, fullSpeed:2};
+    var $controller = $(controller);
+    var tweenToNewSpeed = function(newSpeed, duration)
+    {
+        if (duration === undefined)
+            duration = 600;
+        $controller.stop(true).animate({curSpeed:newSpeed}, duration);
+    };
+
+    /*
+    // Pause on hover
+    scroller.hover(function(){
+        tweenToNewSpeed(0);
+    }, function(){
+        tweenToNewSpeed(controller.fullSpeed);
+    });
+    */
+
+    // Scrolling management; start the automatical scrolling
+    var doScroll = function()
+    {
+        var curX = scroller.scrollLeft();
+        var newX = curX + controller.curSpeed;
+        if (newX > fullW*2 - viewportW)
+            newX -= fullW;
+        scroller.scrollLeft(newX);
+    };
+    setInterval(doScroll, 25);
+    tweenToNewSpeed(controller.fullSpeed);
+});
+
+
