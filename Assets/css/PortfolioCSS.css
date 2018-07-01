@@ -98,6 +98,11 @@ a{
     color: black;
 }
 
+h2{
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
 .fade{
     -webkit-animation: fadein 5s; 
     -moz-animation: fadein 5s; 
@@ -140,7 +145,7 @@ a{
 }
 
 .bottom p{
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .move-left{
@@ -201,11 +206,6 @@ a{
 
 .content h2,p{
     margin-left: 10px;
-}
-
-h2{
-    font-size: 60px;
-    letter-spacing: 2px;
 }
 
 .content p{
@@ -411,8 +411,36 @@ Responsiveness
 ========================================
 */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
+    h2{
+        font-size: 40px;
+        letter-spacing: 2px;
+        margin-top: 10px;
+    }
+
+    .icon{
+        height: 46px;
+        width: 46px;
+    }
+
+    .banner1{
+        font-size: 40; 
+        letter-spacing: 1.5px;
+    }
+
+    .profile-pic{
+        width: 171px;
+        height: 240px;
+    }
+
+    .flex-start{
+        flex-wrap: wrap;
+    }
+    
+    .gap2{
+        margin-bottom: 42vh;
+    }
 
 }
 

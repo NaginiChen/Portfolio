@@ -40,7 +40,7 @@ $(function(){
             newX -= fullW;
         scroller.scrollLeft(newX);
     };
-    setInterval(doScroll, 25);
+    setInterval(doScroll, 24);
     tweenToNewSpeed(controller.fullSpeed);
 });
 
