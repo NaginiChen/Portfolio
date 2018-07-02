@@ -415,7 +415,7 @@ Responsiveness
 ========================================
 */
 
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
 
     h2{
         font-size: 40px;
