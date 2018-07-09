@@ -445,11 +445,18 @@ Responsiveness
     .gap2{
         margin-bottom: 42vh;
     }
-    
+
     .gap3{
-        margin-bottom: 600px;
+        margin-bottom: 400px;
     }
 
+    .imageSize{
+        height: 800px;
+    }
+
+    .scrollerClass{
+        height: 800px;
+    }
 
 }
 
