@@ -103,6 +103,10 @@ h2{
     letter-spacing: 2px;
 }
 
+.height-100{
+    height: 100%;
+}
+
 .fade{
     -webkit-animation: fadein 5s; 
     -moz-animation: fadein 5s; 
@@ -273,6 +277,12 @@ Flexbox
     justify-content: center;
 }
 
+.flex-space-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .flex-start{
     display: flex;
     flex-direction: row;
@@ -440,14 +450,6 @@ Responsiveness
 
     .flex-start{
         flex-wrap: wrap;
-    }
-
-    .gap2{
-        margin-bottom: 42vh;
-    }
-
-    .gap3{
-        margin-bottom: 400px;
     }
 
     .imageSize{
