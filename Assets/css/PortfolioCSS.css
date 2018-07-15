@@ -178,8 +178,8 @@ h2{
 }
 
 .icon{
-    height: 70px;
-    width: 70px;
+    height: 110px;
+    width: 110px;
 }
 
 .block{
@@ -459,6 +459,15 @@ Responsiveness
     .scrollerClass{
         height: 800px;
     }
+    
+    .gap2{
+        height: 35vh;
+    }
+    
+    .gap3{
+        height: 35vh;
+    }
+    
 
 }
 
