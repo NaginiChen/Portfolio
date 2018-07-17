@@ -461,22 +461,22 @@ Responsiveness
     }
 
     .gap2{
-        height: 35vh;
+        margin-bottom: 35vh;
     }
 
     .gap3{
-        height: 35vh;
+        margin-bottom: 35vh;
     }
 }
 
 @media screen and (min-width: 1200px) {
     
     .gap2{
-        height: 50vh;
+        margin-bottom: 50vh;
     }
     
     .gap3{
-        height: 50vh;
+        margin-bottom: 50vh;
     }
 
 }
