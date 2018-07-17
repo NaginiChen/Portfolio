@@ -139,7 +139,7 @@ h2{
 }
 
 .gap3{
-    margin-bottom: 70px;
+    margin-bottom: 80px;
 }
 
 .bottom{
@@ -459,18 +459,27 @@ Responsiveness
     .scrollerClass{
         height: 800px;
     }
-    
+
     .gap2{
         height: 35vh;
     }
-    
+
     .gap3{
         height: 35vh;
     }
-    
-
 }
 
+@media screen and (min-width: 1550px) {
+    
+    .gap2{
+        height: 50vh;
+    }
+    
+    .gap3{
+        height: 50vh;
+    }
+
+}
 
 
 
