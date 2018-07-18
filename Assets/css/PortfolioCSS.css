@@ -427,6 +427,11 @@ Responsiveness
 
 @media screen and (max-width: 800px) {
 
+    .profile-pic{
+        width: 171px;
+        height: 240px;
+    }
+
     h2{
         font-size: 40px;
         letter-spacing: 2px;
@@ -441,11 +446,6 @@ Responsiveness
     .banner1{
         font-size: 40; 
         letter-spacing: 1.5px;
-    }
-
-    .profile-pic{
-        width: 171px;
-        height: 240px;
     }
 
     .flex-start{
