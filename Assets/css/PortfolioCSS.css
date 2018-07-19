@@ -453,11 +453,11 @@ Responsiveness
     }
 
     .imageSize{
-        height: 800px;
+        height: 1000px;
     }
 
     .scrollerClass{
-        height: 800px;
+        height: 1000px;
     }
 
     .gap2{
@@ -472,11 +472,11 @@ Responsiveness
 @media screen and (min-width: 2100px) {
     
     .gap2{
-        margin-bottom: 50vh;
+        margin-bottom: 25vh;
     }
     
     .gap3{
-        margin-bottom: 50vh;
+        margin-bottom: 25vh;
     }
 
 }
