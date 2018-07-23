@@ -477,6 +477,7 @@ Responsiveness
 
     .imageSize, .scrollerClass{
         height: 800px;
+        width: 1500px;
     }
 
 }
