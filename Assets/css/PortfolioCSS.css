@@ -222,26 +222,6 @@ h2{
     line-height: 20px;
 }
 
-.resume{
-    width: 180px;
-    height: 38px;
-    background-color: white;
-    border-radius: 10%;
-    -moz-border-radius: 10%;
-    -webkit-border-radius: 10%;
-    border: 5px solid #FFA730;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-.resume p{
-    font-size: 37px;
-    color: #FFA730;
-    margin: 0;
-    padding: 0;
-}
-
 /*
 ========================================
 Flexbox
