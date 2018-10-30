@@ -71,9 +71,9 @@ General
 */
 
 body{
-    margin-top: 5px;
+    margin-top: 1em;
     height: auto;
-    min-height: 99vh;
+    font-family: Josefin sans, cursive, arial;
 }
 
 h1{
@@ -108,6 +108,12 @@ h2{
     height: 100%;
 }
 
+.navigation{
+    width: 100%;
+    padding: 1em 0 1em 0;
+    font-size: 1.3em;
+}
+
 .fade{
     -webkit-animation: fadein 5s; 
     -moz-animation: fadein 5s; 
@@ -116,19 +122,20 @@ h2{
     animation: fadein 5s
 }
 
-.line{
-    height: 4px;
-    width: 100%;
-    background-color: black;
-    opacity: .7;
-}
-
 .Poiret{
     font-family: Poiret One, cursive, arial;
 }
 
 .Josefin{
     font-family: Josefin Sans, sans-serif, arial;
+}
+
+.line{
+    margin: .5em 0 3em 0;
+    height: 5px;
+    width: 100%;
+    background-color: 000;
+    opacity: .7;
 }
 
 .gap1{
@@ -223,18 +230,65 @@ h2{
     line-height: 20px;
 }
 
+.relative{
+    display: relative;
+}
+
+.white-text{
+    color: FFF;
+}
+
+.img1{
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),url(../images/img1.jpg) no-repeat center;
+    background-size: cover;
+    width: 99.8%;
+    height: 40em;
+    margin: 0 .1% 5px .1%;
+
+}
+
+.img2{
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),url(../images/img3.jpg) no-repeat center;
+    background-size: cover;
+    width: 33.1%;
+    height: 30em;
+}
+
+.img3{
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),url(../images/img4.jpg) no-repeat center;
+    background-size: cover;
+    width: 33.2%;
+    height: 30em;
+}
+
+.img4{
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),url(../images/img2.jpg) no-repeat center;
+    background-size: cover;
+    width: 33.2%;
+    height: 30em;
+}
+
+
 /************** Footer **********/
 
 .wrapper {
-  min-height: 90%;
-  margin-bottom: -30px;
+    min-height: 100vh;
 }
 
-footer, .push {
-  height: 30px;
+footer{
 }
-
-/*********************************/
 
 /*
 ========================================
@@ -254,6 +308,14 @@ Flexbox
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-space-around{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -313,18 +375,13 @@ Colors
 
 /*
 ========================================
-Grid Testing
+Grid 
 ========================================
 */
 
 .grid{
     display: grid;
-    /*
-    width: 100%;
-    height: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    grid-template-rows: repeat(10 10%);
-    */
+
 }
 
 /*
@@ -372,45 +429,6 @@ Animation
     to   { opacity: 1; }
 }
 
-/*
-========================================
-Slide Show
-========================================
-*/
-
-.imageSize{
-    width: 1000px; 
-    height: 500px; 
-}
-
-.scrollerClass{
-    width: auto; 
-    height: 500px;
-    margin: 0 auto;
-}
-
-#scroller {
-    position: relative;
-}
-#scroller .innerScrollArea {
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-#scroller ul {
-    padding: 0;
-    margin: 0;
-    position: relative;
-}
-#scroller li {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    position: absolute;
-}
 
 
 /*
