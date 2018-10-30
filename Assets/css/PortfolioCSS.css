@@ -240,20 +240,19 @@ h2{
 
 .img1{
     background: linear-gradient(
-      rgba(0, 0, 0, 0.7), 
-      rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
     ),url(../images/img1.jpg) no-repeat center;
     background-size: cover;
     width: 99.8%;
     height: 40em;
     margin: 0 .1% 5px .1%;
-
 }
 
 .img2{
     background: linear-gradient(
-      rgba(0, 0, 0, 0.7), 
-      rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
     ),url(../images/img3.jpg) no-repeat center;
     background-size: cover;
     width: 33.1%;
@@ -262,8 +261,8 @@ h2{
 
 .img3{
     background: linear-gradient(
-      rgba(0, 0, 0, 0.7), 
-      rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
     ),url(../images/img4.jpg) no-repeat center;
     background-size: cover;
     width: 33.2%;
@@ -272,8 +271,8 @@ h2{
 
 .img4{
     background: linear-gradient(
-      rgba(0, 0, 0, 0.7), 
-      rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
     ),url(../images/img2.jpg) no-repeat center;
     background-size: cover;
     width: 33.2%;
