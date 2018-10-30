@@ -151,11 +151,11 @@ h2{
 }
 
 .bottom{
-    height: 50px;
+    height: 5em;
     width: 100%;
     background-color: #E0E0E0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     font-weight: bold;
 }
@@ -186,8 +186,9 @@ h2{
 }
 
 .icon{
-    height: 80px;
-    width: 80px;
+    height: 50px;
+    width: 50px;
+    margin: 0 .5em 0 .5em;
 }
 
 .block{
@@ -284,6 +285,7 @@ h2{
 
 .wrapper {
     min-height: 100vh;
+    margin-bottom: 5em;
 }
 
 footer{
