@@ -368,6 +368,10 @@ a{
     max-height: 300px;
 }
 
+.popup div p{
+    padding: 0 5% 0 2%;
+}
+
 /*
 ========================================
 Responsiveness
