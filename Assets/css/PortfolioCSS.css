@@ -108,7 +108,7 @@ h3{
 }
 
 p{
-    font-size: calc(14px + (16 - 14) * ((100vw - 1px) / (2048 - 1)));
+    font-size: calc(16px + (17 - 16) * ((100vw - 1px) / (2048 - 1)));
 }
 
 header h1{
