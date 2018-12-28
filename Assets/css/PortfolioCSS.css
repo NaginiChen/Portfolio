@@ -87,12 +87,21 @@ footer{
     height: 5em;
     justify-content: center;
     align-items: center;
-    margin: 2em 0 0 0;
+    margin: 5em 0 0 0;
     padding: 2em 0 2em 0;
     border-top: solid 5px #000;
 }
 
 /**************************/
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    margin: 1em 0 1em 0;
+    font-size: calc(4em + (5 - 4) * ((100vw - 501px) / (2048 - 501)));
+}
 
 h3{
     font-size: calc(2.5em + (3 - 2.5) * ((100vw - 501px) / (2048 - 501)));
@@ -105,7 +114,6 @@ p{
 header h1{
     font-weight: bold;
     letter-spacing: 4px;
-    font-size: 3em;
     text-align: center;
 }
 
@@ -188,6 +196,24 @@ a{
     justify-content: flex-start;
 }
 
+.flex-center{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+}
+
+.flex-center-2{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-space{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
 .social{
     display: flex;
     justify-content: flex-start;
@@ -224,6 +250,124 @@ a{
     display: none;
 }
 
+.grid-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: repeat(auto);
+    grid-row-gap: 3em;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+.work-card{
+    position: relative;
+    width: 100%;
+    height: 30em;
+    border-radius: 10%;
+    overflow: hidden;
+    background-color: #EDE9E9;
+}
+
+.work-card img{
+    height: 50%;
+    margin-bottom: 1em;
+}
+
+.card-body{
+    padding: 0 5% 0 5%;
+}
+
+.card-footer{
+    position: absolute;
+    background-color: #EDE9E9;
+    z-index: 5;
+    height: 10%;
+    width: 100%;
+    top: 90%;
+}
+
+.card-footer div{
+    margin-top: 10px;
+}
+
+.card-footer div p {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Source: https://codepen.io/anon/pen/EGvKZW */
+/****************   Overlay     ******************/
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    width: 95%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup-imgs{
+    display: grid;
+    width: 95%;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(auto);
+    justify-items: center; /* Horizontal */
+    align-items: center; /* Vertical */
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+}
+
+.popup-imgs img{
+    width: 100%;
+    max-height: 300px;
+}
+
+.popup-imgs-2{
+    display: grid;
+    width: 95%;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(auto);
+    justify-items: center; /* Horizontal */
+    align-items: center; /* Vertical */
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+}
+
+.popup-imgs-2 img{
+    width: 100%;
+    max-height: 300px;
+}
+
 /*
 ========================================
 Responsiveness
@@ -240,20 +384,63 @@ Responsiveness
         float: none;
     }
 
+    h2{
+        font-size: 2.5em;
+    }
+
     h3{
         font-size: 1.5em;
     }
-    
+
+    header h1{
+        letter-spacing: 3px;
+        font-size: 2.5em;
+    }
+
+    header h3{
+        letter-spacing: 5px;
+        font-size: 1em;
+    }
+
     .display-none{
         display: none;
     }
-    
+
     .display-show{
         display: flex;
     }
 
+    .grid-container{
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .popup-imgs{
+        grid-template-columns: repeat(1, 95%);
+        justify-items: flex-start;
+    }
+
+    .popup-imgs img{
+        margin-bottom: 1em;
+    }
+
+    .popup-imgs-2{
+        grid-template-columns: repeat(2, 45%);
+        justify-items: flex-start;
+    }
+
+    .popup-imgs-2 img{
+        margin-bottom: 1em;
+    }
+
 }
 
+@media screen and (max-width: 1024px) and (min-width: 501px){
+
+    .grid-container{
+        grid-template-columns: repeat(2, 40%);
+    }
+
+}
 
 
 
