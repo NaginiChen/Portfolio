@@ -316,7 +316,7 @@ a{
 }
 
 .popup {
-    margin: 70px auto;
+    margin: 30px auto;
     padding: 20px;
     background: #fff;
     border-radius: 10px;
@@ -352,6 +352,13 @@ a{
     max-height: 250px;
 }
 
+.popup div p{
+    padding: 0 5% 0 2%;
+}
+
+/************************************/
+
+
 .popup-imgs-2{
     display: grid;
     width: 95%;
@@ -368,8 +375,15 @@ a{
     max-height: 300px;
 }
 
-.popup div p{
-    padding: 0 5% 0 2%;
+/************************************/
+
+.popup_alt1{
+    grid-template-columns: repeat(1, 95%);
+}
+
+.popup_alt1 img{
+    width: 15%;
+    max-height: none;
 }
 
 /*
