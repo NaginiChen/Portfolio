@@ -1,0 +1,123 @@
+$Lato: Lato;
+$Poiret: Poiret One;
+$black: #000;
+$white: #FFF;
+$pink: rgb(245, 94, 127);
+$blue: rgb(69, 98, 161);
+$green: rgb(76, 240, 125);
+
+@mixin flex($row, $col, $flow) {
+    display: flex;
+    justify-content: $row;
+    align-items: $col;
+    flex-flow: $flow;
+}
+
+html {
+    font-size: 16px;
+    font-family: Lato;
+}
+
+h1 {
+    font-size: 4.5em;
+    margin: .5em 0 .15em 0;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+header {
+    @include flex(center, center, row wrap);
+    background-color: $pink;
+    color: $white;
+
+    a {
+        color: $white;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+main {
+    padding: 3em 7%;
+}
+
+footer {
+    @include flex(center, flex-start, row wrap);
+    border-top: solid 3px $black;
+    padding: 1em 0;
+    margin: 2em 0 0 0;
+
+    img {
+        height: 2em;
+        width: 2em;
+        margin: 0 .75em;
+    }
+
+    a:nth-child(5) {
+        margin: 5px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+}
+
+.poiret {
+    font-family: $Poiret;
+}
+
+.center {
+    @include flex(center, flex-start, row wrap);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.front-page {
+    @include flex(space-around, center, row wrap);
+
+    div {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        .divider {
+            display: none;
+        }
+
+        div {
+            @include flex(center, center, row);
+            border: solid $white 1px;
+            width: 100%;
+        }
+    }
+
+
+
+
+}
