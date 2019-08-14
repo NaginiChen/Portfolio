@@ -4,7 +4,7 @@ html {
 }
 
 h1 {
-  font-size: 4.5em;
+  font-size: 4em;
   margin: .5em 0 .15em 0;
 }
 
@@ -13,7 +13,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 a {
@@ -104,10 +104,6 @@ footer a:nth-child(5):hover {
           flex-flow: row wrap;
 }
 
-.bold {
-  font-weight: bold;
-}
-
 .front-page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,12 +115,30 @@ footer a:nth-child(5):hover {
           align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+      -ms-flex-flow: row;
+          flex-flow: row;
 }
 
 .front-page div img {
   width: 100%;
+}
+
+.front-page span {
+  font-weight: bold;
+}
+
+.front-page section {
+  margin: 3em 0;
+}
+
+.front-page h1,
+.front-page h2:nth-child(2) {
+  display: inline;
+}
+
+.front-page ul,
+.front-page h3 {
+  margin: 0;
 }
 
 .resume-container {
@@ -166,5 +180,22 @@ footer a:nth-child(5):hover {
             flex-flow: row;
     border: solid #FFF 1px;
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .front-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
   }
 }
