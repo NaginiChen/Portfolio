@@ -3,8 +3,6 @@ $Poiret: Poiret One;
 $black: #000;
 $white: #FFF;
 $pink: rgb(245, 94, 127);
-$blue: rgb(69, 98, 161);
-$green: rgb(76, 240, 125);
 
 @mixin flex($row, $col, $flow) {
     display: flex;
@@ -42,6 +40,10 @@ a {
 
 .underline {
     text-decoration: underline;
+}
+
+.pink{
+    color: $pink;
 }
 
 header {
@@ -108,7 +110,7 @@ footer {
     }
 
     section {
-        margin: 3em 0;
+        margin: 2em 0;
     }
 
     h1,
@@ -192,6 +194,12 @@ footer {
 
     .resume-container {
         padding: 0 10%;
+    }
+
+    header {
+        h2{
+            margin: .7em 0;
+        }
     }
 
 }

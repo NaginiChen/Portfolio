@@ -29,6 +29,10 @@ a {
   text-decoration: underline;
 }
 
+.pink {
+  color: #f55e7f;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,7 +144,7 @@ footer a:nth-child(5):hover {
 }
 
 .front-page section {
-  margin: 3em 0;
+  margin: 2em 0;
 }
 
 .front-page h1,
@@ -252,6 +256,9 @@ footer a:nth-child(5):hover {
   }
   .resume-container {
     padding: 0 10%;
+  }
+  header h2 {
+    margin: .7em 0;
   }
 }
 
