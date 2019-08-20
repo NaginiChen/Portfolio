@@ -42,7 +42,7 @@ a {
     text-decoration: underline;
 }
 
-.pink{
+.pink {
     color: $pink;
 }
 
@@ -125,20 +125,44 @@ footer {
 }
 
 
-.grid-container {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-row-gap: 1em;
-    justify-items: center;
+.work-container {
 
-    div {
-        display: flex;
-        justify-content: center;
-        height: 20em;
-        width: 75%;
-        background-color: $pink;
+    h1 {
+        font-family: $Poiret;
+        font-weight: bold;
+        margin: 1.5em 0;
+        text-align: center;
     }
+
+    section {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-row-gap: 3em;
+        justify-items: center;
+
+        div {
+            display: flex;
+            justify-content: center;
+            height: 25em;
+            width: 75%;
+            border: solid $pink 2px;
+            overflow: hidden;
+            background-color: rgba(255, 224, 236, 0.8);
+
+            img {
+                object-fit: contain;
+                object-position: center;
+            }
+
+            .wide {
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+    }
+
+
 }
 
 .resume-container {
@@ -197,7 +221,7 @@ footer {
     }
 
     header {
-        h2{
+        h2 {
             margin: .7em 0;
         }
     }

@@ -157,27 +157,49 @@ footer a:nth-child(5):hover {
   margin: 0;
 }
 
-.grid-container {
+.work-container h1 {
+  font-family: Poiret One;
+  font-weight: bold;
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+.work-container section {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   -ms-grid-columns: 33.3% 33.3% 33.3%;
       grid-template-columns: 33.3% 33.3% 33.3%;
-  grid-row-gap: 1em;
+  grid-row-gap: 3em;
   justify-items: center;
 }
 
-.grid-container div {
+.work-container section div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 20em;
+  height: 25em;
   width: 75%;
-  background-color: #f55e7f;
+  border: solid #f55e7f 2px;
+  overflow: hidden;
+  background-color: rgba(255, 224, 236, 0.8);
+}
+
+.work-container section div img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.work-container section div .wide {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 .resume-container {
