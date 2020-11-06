@@ -1,308 +1,48 @@
 html {
   font-size: 16px;
-  font-family: Lato;
-}
-
-h1 {
-  font-size: 4em;
-  margin: .5em 0 .15em 0;
-}
-
-h2 {
-  font-size: 2em;
-}
-
-h3 {
-  font-size: 1.3em;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.underline {
-  text-decoration: underline;
-}
-
-.pink {
-  color: #f55e7f;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  background-color: #f55e7f;
-  color: #FFF;
-}
-
-header a {
-  color: #FFF;
-}
-
-header a:hover {
-  text-decoration: underline;
 }
 
 main {
-  padding: 3em 7%;
+  font-family: "Raleway";
+  background-color: #7E7E7E;
 }
 
-footer {
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  border-top: solid 3px #000;
-  padding: 1em 0;
-  margin: 2em 0 0 0;
-}
-
-footer img {
-  height: 2em;
-  width: 2em;
-  margin: 0 .75em;
-}
-
-footer a:nth-child(5) {
-  margin: 5px;
-}
-
-footer a:nth-child(5):hover {
-  text-decoration: underline;
-}
-
-.poiret {
-  font-family: Poiret One;
-}
-
-.center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-}
-
-.front-page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
-  -webkit-animation-name: fadeLeft;
-          animation-name: fadeLeft;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
-.front-page div img {
+  background-color: #47B089;
+  font-family: "Poppins";
+  min-height: 7vh;
   width: 100%;
+  padding: .5em 10%;
+  font-size: 1.25em;
 }
 
-.front-page span {
-  font-weight: bold;
+nav a {
+  color: #FFF !important;
+  font-size: 1.25em;
 }
 
-.front-page section {
-  margin: 2em 0;
+nav a:hover {
+  color: #FFF;
 }
 
-.front-page h1,
-.front-page h2:nth-child(2) {
-  margin: 0;
+.base-container {
+  padding: 0 10%;
 }
 
-.front-page ul,
-.front-page h3 {
-  margin: 0;
+.home-container {
+  height: 93vh;
+  padding-top: 5em;
+  color: #FFF;
 }
 
-.work-container h1 {
-  font-family: Poiret One;
-  font-weight: bold;
-  margin: 1.5em 0;
-  text-align: center;
+.home-container h1 {
+  font-weight: 700;
 }
 
-.work-container section {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  -ms-grid-columns: 33.3% 33.3% 33.3%;
-      grid-template-columns: 33.3% 33.3% 33.3%;
-  grid-row-gap: 3em;
-  justify-items: center;
-}
-
-.work-container section div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 25em;
-  width: 75%;
-  border: solid #f55e7f 2px;
-  overflow: hidden;
-  background-color: rgba(255, 224, 236, 0.8);
-}
-
-.work-container section div img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
-}
-
-.work-container section div .wide {
-  -o-object-fit: cover;
-     object-fit: cover;
+.home-container img {
   width: 100%;
-}
-
-.resume-container {
-  padding: 0 30%;
-}
-
-.resume-container h2 {
-  color: #f55e7f;
-}
-
-.resume-container section {
-  margin: 4em 0;
-  display: block;
-}
-
-.resume-container p:first-child {
-  margin: 3em 0;
-}
-
-@-webkit-keyframes fadeLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-50px);
-            transform: translateX(-50px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@keyframes fadeLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-50px);
-            transform: translateX(-50px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  header {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-  header .divider {
-    display: none;
-  }
-  header div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
-    border: solid #FFF 1px;
-    width: 100%;
-  }
-  .resume-container {
-    padding: 0 10%;
-  }
-  header h2 {
-    margin: .7em 0;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .front-page {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-  }
-}
-
-@media only screen and (min-width: 501px) and (max-width: 1024px) {
-  .resume-container {
-    padding: 0 20%;
-  }
+  max-width: 20em;
 }

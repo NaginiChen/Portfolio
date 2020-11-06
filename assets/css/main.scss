@@ -1,242 +1,57 @@
-$Lato: Lato;
-$Poiret: Poiret One;
-$black: #000;
+$header-font: 'Poppins';
+$main-font: 'Raleway';
+$pallette-one:#47B089;
+$pallette-two: #7E7E7E;
+$pallette-three: #45C5F5;
 $white: #FFF;
-$pink: rgb(245, 94, 127);
-
-@mixin flex($row, $col, $flow) {
-    display: flex;
-    justify-content: $row;
-    align-items: $col;
-    flex-flow: $flow;
-}
 
 html {
-    font-size: 16px;
-    font-family: Lato;
+  font-size: 16px;
 }
 
-h1 {
-    font-size: 4em;
-    margin: .5em 0 .15em 0;
+main{
+  font-family: $main-font;
+  background-color:$pallette-two;
 }
 
-h2 {
-    font-size: 2em;
-}
+nav {
+  display: flex;
+  background-color: $pallette-one;
+  font-family: $header-font;
+  min-height: 7vh;
+  width: 100%;
+  padding: .5em 10%;
+  font-size: 1.25em;
 
-h3 {
-    font-size: 1.3em;
-}
+  a {
+    color: $white !important;
+    font-size: 1.25em;
 
-a {
-    text-decoration: none;
-    color: $black;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.underline {
-    text-decoration: underline;
-}
-
-.pink {
-    color: $pink;
-}
-
-header {
-    @include flex(center, center, row wrap);
-    background-color: $pink;
-    color: $white;
-
-    a {
-        color: $white;
-
-        &:hover {
-            text-decoration: underline;
-        }
+    &:hover {
+      color: $white;
     }
+  }
 }
 
-main {
-    padding: 3em 7%;
+.base-container{
+  padding: 0 10%;
 }
 
-footer {
-    @include flex(center, flex-start, row wrap);
-    border-top: solid 3px $black;
-    padding: 1em 0;
-    margin: 2em 0 0 0;
+.home-container{
+  height: 93vh;
+  padding-top: 5em;
+  color: $white;
 
-    img {
-        height: 2em;
-        width: 2em;
-        margin: 0 .75em;
-    }
+  h1{
+    font-weight: 700;
+  }
+  
+  img{
+    width: 100%;
+    max-width: 20em;
+  }
 
-    a:nth-child(5) {
-        margin: 5px;
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-}
-
-.poiret {
-    font-family: $Poiret;
-}
-
-.center {
-    @include flex(center, flex-start, row wrap);
-}
-
-.front-page {
-    @include flex(space-around, center, row);
-
-    animation-name: fadeLeft;
-    animation-duration: 2s;
-
-    div {
-        img {
-            width: 100%;
-        }
-    }
-
-    span {
-        font-weight: bold;
-    }
-
-    section {
-        margin: 2em 0;
-    }
-
-    h1,
-    h2:nth-child(2) {
-        margin: 0;
-    }
-
-    ul,
-    h3 {
-        margin: 0;
-    }
 }
 
 
-.work-container {
 
-    h1 {
-        font-family: $Poiret;
-        font-weight: bold;
-        margin: 1.5em 0;
-        text-align: center;
-    }
-
-    section {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 33.3% 33.3% 33.3%;
-        grid-row-gap: 3em;
-        justify-items: center;
-
-        div {
-            display: flex;
-            justify-content: center;
-            height: 25em;
-            width: 75%;
-            border: solid $pink 2px;
-            overflow: hidden;
-            background-color: rgba(255, 224, 236, 0.8);
-
-            img {
-                object-fit: contain;
-                object-position: center;
-            }
-
-            .wide {
-                object-fit: cover;
-                width: 100%;
-            }
-        }
-    }
-
-
-}
-
-.resume-container {
-
-    padding: 0 30%;
-
-    h2 {
-        color: $pink;
-    }
-
-    section {
-        margin: 4em 0;
-        display: block;
-    }
-
-    p:first-child {
-        margin: 3em 0;
-    }
-
-}
-
-@keyframes fadeLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@media only screen and (max-width: 500px) {
-
-    header {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-
-        .divider {
-            display: none;
-        }
-
-        div {
-            @include flex(center, center, row);
-            border: solid $white 1px;
-            width: 100%;
-        }
-    }
-
-    .resume-container {
-        padding: 0 10%;
-    }
-
-    header {
-        h2 {
-            margin: .7em 0;
-        }
-    }
-
-}
-
-@media only screen and (max-width: 1024px) {
-    .front-page {
-        @include flex(space-around, center, row wrap);
-    }
-
-}
-
-@media only screen and (min-width: 501px) and (max-width: 1024px) {
-    .resume-container {
-        padding: 0 20%;
-    }
-}
