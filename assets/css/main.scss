@@ -1,9 +1,8 @@
 $header-font: 'Poppins';
 $main-font: 'Raleway';
-$pallette-one:#47B089;
-$pallette-two: #7E7E7E;
+$pallette-one: #f07a8e;
+$pallette-two: #f6f3f2;
 $pallette-three: #45C5F5;
-$white: #FFF;
 
 html {
   font-size: 16px;
@@ -16,6 +15,8 @@ main{
 
 nav {
   display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: $pallette-one;
   font-family: $header-font;
   min-height: 7vh;
@@ -23,12 +24,23 @@ nav {
   padding: .5em 10%;
   font-size: 1.25em;
 
-  a {
-    color: $white !important;
+  p{
+    color: #000;
     font-size: 1.25em;
+    margin: 0 1em 0 0;
 
     &:hover {
-      color: $white;
+      color: #000;
+    }
+  }
+
+  a {
+    color: #000;
+    font-size: 1.25em;
+    margin: 0 1em 0 0;
+
+    &:hover {
+      color: #000;
     }
   }
 }
@@ -40,7 +52,7 @@ nav {
 .home-container{
   height: 93vh;
   padding-top: 5em;
-  color: $white;
+  color: #000;
 
   h1{
     font-weight: 700;
