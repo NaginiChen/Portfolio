@@ -1,0 +1,69 @@
+$header-font: 'Poppins';
+$main-font: 'Raleway';
+$pallette-one: #f07a8e;
+$pallette-two: #f6f3f2;
+$pallette-three: #45C5F5;
+
+html {
+  font-size: 16px;
+}
+
+main{
+  font-family: $main-font;
+  background-color:$pallette-two;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $pallette-one;
+  font-family: $header-font;
+  min-height: 7vh;
+  width: 100%;
+  padding: .5em 10%;
+  font-size: 1.25em;
+
+  p{
+    color: #000;
+    font-size: 1.25em;
+    margin: 0 1em 0 0;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  a {
+    color: #000;
+    font-size: 1.25em;
+    margin: 0 1em 0 0;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+.base-container{
+  padding: 0 10%;
+}
+
+.home-container{
+  height: 93vh;
+  padding-top: 5em;
+  color: #000;
+
+  h1{
+    font-weight: 700;
+  }
+  
+  img{
+    width: 100%;
+    max-width: 20em;
+  }
+
+}
+
+
+

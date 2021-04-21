@@ -1,0 +1,65 @@
+html {
+  font-size: 16px;
+}
+
+main {
+  font-family: "Raleway";
+  background-color: #f6f3f2;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f07a8e;
+  font-family: "Poppins";
+  min-height: 7vh;
+  width: 100%;
+  padding: .5em 10%;
+  font-size: 1.25em;
+}
+
+nav p {
+  color: #000;
+  font-size: 1.25em;
+  margin: 0 1em 0 0;
+}
+
+nav p:hover {
+  color: #000;
+}
+
+nav a {
+  color: #000;
+  font-size: 1.25em;
+  margin: 0 1em 0 0;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+.base-container {
+  padding: 0 10%;
+}
+
+.home-container {
+  height: 93vh;
+  padding-top: 5em;
+  color: #000;
+}
+
+.home-container h1 {
+  font-weight: 700;
+}
+
+.home-container img {
+  width: 100%;
+  max-width: 20em;
+}
